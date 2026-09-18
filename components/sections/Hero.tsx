@@ -40,7 +40,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <motion.div initial={{ opacity: 0, scale: .96, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .16 }} className="relative mx-auto w-full max-w-xl lg:pl-4">
+          <motion.div initial={{ opacity: 0, scale: .96, y: 22 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .16 }} className="relative mx-auto w-full max-w-xl lg:pl-4" aria-hidden="true">
             <div className="hero-orbit absolute -inset-8 rounded-[3rem]" />
             <div className="relative rounded-[1.75rem] border border-white/10 bg-surface/90 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl">
               <div className="browser-shell overflow-hidden rounded-[1.35rem] border border-white/10 bg-background">
