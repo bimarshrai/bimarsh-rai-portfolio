@@ -1,3 +1,4 @@
+import "@/components/aurelia/aurelia.css";
 import type { Metadata } from "next";
 import AureliaPage from "@/components/aurelia/AureliaPage";
 
