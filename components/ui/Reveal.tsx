@@ -8,7 +8,15 @@ const variants: Variants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: "easeOut" } },
 };
 
-export default function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
+export default function Reveal({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+}) {
   return (
     <motion.div
       variants={variants}
@@ -17,6 +25,7 @@ export default function Reveal({ children, className = "", delay = 0 }: { childr
       viewport={{ once: true, amount: 0.15 }}
       transition={{ delay }}
       className={className}
+      whileFocus="show"
     >
       {children}
     </motion.div>
