@@ -1,3 +1,4 @@
+import "@/components/nexus/nexus.css";
 import type { Metadata } from "next";
 import NexusPage from "@/components/nexus/NexusPage";
 
