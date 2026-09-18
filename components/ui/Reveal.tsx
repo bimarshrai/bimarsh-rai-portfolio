@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import type { ReactNode } from "react";
 
 const variants: Variants = {
@@ -17,15 +17,16 @@ export default function Reveal({
   className?: string;
   delay?: number;
 }) {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <motion.div
-      variants={variants}
-      initial="hidden"
-      whileInView="show"
+      variants={prefersReducedMotion ? undefined : variants}
+      initial={prefersReducedMotion ? false : "hidden"}
+      whileInView={prefersReducedMotion ? undefined : "show"}
       viewport={{ once: true, amount: 0.15 }}
-      transition={{ delay }}
+      transition={prefersReducedMotion ? undefined : { delay }}
       className={className}
-      whileFocus="show"
     >
       {children}
     </motion.div>
