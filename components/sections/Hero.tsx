@@ -21,9 +21,9 @@ export default function Hero() {
               Web Designer &amp; Developer
             </motion.div>
 
-            <motion.h1 className="max-w-4xl font-heading text-[3.15rem] font-semibold leading-[.93] tracking-[-0.055em] sm:text-6xl lg:text-[5.35rem] xl:text-[6rem]">
+            <h1 className="max-w-4xl font-heading text-[3.15rem] font-semibold leading-[.93] tracking-[-0.055em] sm:text-6xl lg:text-[5.35rem] xl:text-[6rem]">
               DIGITAL EXPERIENCES <span className="text-gradient">BUILT TO STAND OUT.</span>
-            </motion.h1>
+            </h1>
 
             <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.2 }} className="mt-7 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
               Modern, high-performance websites designed for growing businesses — from first impression to final interaction.
