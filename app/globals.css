@@ -42,22 +42,22 @@ body{margin:0;background:var(--background);color:var(--foreground);font-family:v
 
 
 /* Portfolio project covers — bespoke, image-led thumbnails */
-.project-cover{isolation:isolate;color:#fff;background-color:#151515;background-position:center;background-size:cover;background-repeat:no-repeat}
+.project-cover{isolation:isolate;color:#fff;background-color:#151515}
 .project-cover-grid{background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:32px 32px;opacity:.24;mask-image:linear-gradient(to bottom,black,transparent 85%);z-index:1}
 .project-cover-grain{opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E");mix-blend-mode:screen;z-index:2}
 .cover-noir,.cover-volt,.cover-monument,.cover-aurelia,.cover-forma,.cover-verdict,.cover-solaire,.cover-muse,.cover-nexus,.cover-orbit,.cover-frame,.cover-vow{position:relative;overflow:hidden}
-.cover-noir{background-image:linear-gradient(115deg,rgba(8,8,8,.66),rgba(8,8,8,.16)),url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1800&q=85")}
-.cover-volt{background-image:linear-gradient(115deg,rgba(5,5,5,.72),rgba(5,5,5,.18)),url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1800&q=85")}
-.cover-monument{background-image:linear-gradient(115deg,rgba(20,20,18,.68),rgba(20,20,18,.14)),url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85")}
-.cover-aurelia{background-image:linear-gradient(115deg,rgba(28,27,24,.62),rgba(28,27,24,.08)),url("https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1800&q=85")}
-.cover-forma{background-image:linear-gradient(115deg,rgba(27,25,22,.62),rgba(27,25,22,.08)),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")}
-.cover-verdict{background-image:linear-gradient(115deg,rgba(20,21,25,.70),rgba(20,21,25,.12)),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85")}
-.cover-solaire{background-image:linear-gradient(115deg,rgba(38,22,16,.54),rgba(38,22,16,.08)),url("https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1800&q=85")}
-.cover-muse{background-image:linear-gradient(115deg,rgba(44,25,31,.58),rgba(44,25,31,.08)),url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=85")}
-.cover-nexus{background-image:linear-gradient(115deg,rgba(18,25,32,.62),rgba(18,25,32,.10)),url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=85")}
-.cover-orbit{background-image:linear-gradient(115deg,rgba(8,13,22,.70),rgba(8,13,22,.12)),url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85")}
-.cover-frame{background-image:linear-gradient(115deg,rgba(12,12,12,.58),rgba(12,12,12,.08)),url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=85")}
-.cover-vow{background-image:linear-gradient(115deg,rgba(35,20,22,.58),rgba(35,20,22,.08)),url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85")}
+
+
+
+
+
+
+
+
+
+
+
+
 .cover-noir:after,.cover-volt:after,.cover-monument:after,.cover-aurelia:after,.cover-forma:after,.cover-verdict:after,.cover-solaire:after,.cover-muse:after,.cover-nexus:after,.cover-orbit:after,.cover-frame:after,.cover-vow:after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(180deg,rgba(0,0,0,.06),transparent 38%,rgba(0,0,0,.58));pointer-events:none}
 .cover-pill{border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.24);padding:.42rem .7rem;border-radius:999px;font-size:9px;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.84);backdrop-filter:blur(12px)}
 .cover-index{font-size:10px;letter-spacing:.16em;color:rgba(255,255,255,.68)}
