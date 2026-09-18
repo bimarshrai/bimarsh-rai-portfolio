@@ -1,3 +1,4 @@
+import "@/components/orbit/orbit.css";
 import type { Metadata } from "next";
 import OrbitPage from "@/components/orbit/OrbitPage";
 
