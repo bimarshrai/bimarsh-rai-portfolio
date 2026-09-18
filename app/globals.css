@@ -5,6 +5,10 @@
 @theme inline { --color-background:var(--background); --color-surface:var(--surface); --color-foreground:var(--foreground); --color-muted-foreground:var(--muted-foreground); --color-border:var(--border-color); --color-violet:var(--violet); --color-violet-bright:var(--violet-bright); --color-violet-surface:var(--violet-surface); --font-sans:var(--font-inter); --font-heading:var(--font-space-grotesk); }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+html:focus-within{scroll-behavior:smooth}
+:focus-visible{outline:2px solid var(--violet-bright);outline-offset:3px}
+.skip-link{position:fixed;left:1rem;top:1rem;z-index:100;transform:translateY(-200%);border:1px solid var(--violet-bright);border-radius:.75rem;background:var(--surface);padding:.7rem 1rem;color:var(--foreground);font-size:.875rem;font-weight:600;transition:transform .2s ease}
+.skip-link:focus{transform:translateY(0)}
 body{margin:0;background:var(--background);color:var(--foreground);font-family:var(--font-inter),system-ui,sans-serif;background-image:radial-gradient(circle at 50% -20%,rgba(139,92,246,.08),transparent 28rem)}
 ::selection{background:var(--violet);color:white}
 .section-divider{border-top:1px solid var(--border-color)}
