@@ -1,3 +1,4 @@
+import "@/components/muse/muse.css";
 import type { Metadata } from "next";
 import MusePage from "@/components/muse/MusePage";
 
