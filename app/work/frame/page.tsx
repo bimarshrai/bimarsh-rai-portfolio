@@ -1,3 +1,4 @@
+import "@/components/frame/frame.css";
 import type { Metadata } from "next";
 import FramePage from "@/components/frame/FramePage";
 
