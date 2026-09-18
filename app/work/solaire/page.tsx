@@ -1,3 +1,4 @@
+import "@/components/solaire/solaire.css";
 import type { Metadata } from "next";
 import SolairePage from "@/components/solaire/SolairePage";
 
