@@ -1,3 +1,4 @@
+import "@/components/vow/vow.css";
 import type { Metadata } from "next";
 import VowPage from "@/components/vow/VowPage";
 
