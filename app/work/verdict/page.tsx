@@ -1,3 +1,4 @@
+import "@/components/verdict/verdict.css";
 import type { Metadata } from "next";
 import VerdictPage from "@/components/verdict/VerdictPage";
 
