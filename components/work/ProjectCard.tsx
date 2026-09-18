@@ -33,7 +33,9 @@ const coverImages: Record<string, string> = {
   "orbit": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85",
   "frame": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=85",
   "vow": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85"
-};\n\nexport default function ProjectCard({project,index}:{project:Project;index:number}) {
+};
+
+export default function ProjectCard({project,index}:{project:Project;index:number}) {
  const theme=cover[project.slug] ?? cover.noir; const Icon=theme.Icon;
  return <Link href={`/work/${project.slug}`} className="group block h-full"><motion.article whileHover={{y:-8}} transition={{duration:.3,ease:"easeOut"}} className="project-card h-full overflow-hidden rounded-[1.75rem] border border-border bg-surface">
    <div className={`project-cover relative aspect-[16/11] overflow-hidden ${theme.className}`}><Image src={coverImages[project.slug] ?? coverImages.noir} alt="" fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" quality={70} className="absolute inset-0 z-0 object-cover" /><div className="project-cover-grid absolute inset-0"/><div className="project-cover-grain absolute inset-0"/>
