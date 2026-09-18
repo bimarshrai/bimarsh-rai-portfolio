@@ -21,7 +21,7 @@ export default function Hero() {
               Web Designer &amp; Developer
             </motion.div>
 
-            <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.08 }} className="max-w-4xl font-heading text-[3.15rem] font-semibold leading-[.93] tracking-[-0.055em] sm:text-6xl lg:text-[5.35rem] xl:text-[6rem]">
+            <motion.h1 className="max-w-4xl font-heading text-[3.15rem] font-semibold leading-[.93] tracking-[-0.055em] sm:text-6xl lg:text-[5.35rem] xl:text-[6rem]">
               DIGITAL EXPERIENCES <span className="text-gradient">BUILT TO STAND OUT.</span>
             </motion.h1>
 
