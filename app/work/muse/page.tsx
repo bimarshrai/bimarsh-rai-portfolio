@@ -1,6 +1,6 @@
 import "@/components/muse/muse.css";
 import type { Metadata } from "next";
-import MusePage from "@/components/muse/MusePage";
+import { MusePage } from "@/components/muse/MusePage";
 
 export const metadata: Metadata = {
   title: "MUSE — Beauty Atelier",
