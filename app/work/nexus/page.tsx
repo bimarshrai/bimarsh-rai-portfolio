@@ -1,6 +1,6 @@
 import "@/components/nexus/nexus.css";
 import type { Metadata } from "next";
-import NexusPage from "@/components/nexus/NexusPage";
+import { NexusPage } from "@/components/nexus/NexusPage";
 
 export const metadata: Metadata = {
   title: "NEXUS — Executive Education",
