@@ -1,6 +1,6 @@
 import "@/components/frame/frame.css";
 import type { Metadata } from "next";
-import FramePage from "@/components/frame/FramePage";
+import { FramePage } from "@/components/frame/FramePage";
 
 export const metadata: Metadata = {
   title: "FRAME — Photography Studio",
