@@ -1,6 +1,6 @@
 import "@/components/forma/forma.css";
 import type { Metadata } from "next";
-import FormaPage from "@/components/forma/FormaPage";
+import { FormaPage } from "@/components/forma/FormaPage";
 
 export const metadata: Metadata = {
   title: "FORMA — Architecture + Construction",
