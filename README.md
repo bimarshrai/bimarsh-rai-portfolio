@@ -32,3 +32,5 @@ Actual standalone integrations: AURELIA, FORMA, VERDICT, SOLAIRE, MUSE, NEXUS, O
 
 
 WhatsApp Cloud API setup instructions are in `WHATSAPP-SETUP.md`.
+
+<!-- Production deployment verification trigger -->
