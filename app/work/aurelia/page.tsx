@@ -1,6 +1,6 @@
 import "@/components/aurelia/aurelia.css";
 import type { Metadata } from "next";
-import AureliaPage from "@/components/aurelia/AureliaPage";
+import { AureliaPage } from "@/components/aurelia/AureliaPage";
 
 export const metadata: Metadata = {
   title: "AURELIA — Private Medicine",
