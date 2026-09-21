@@ -1,6 +1,6 @@
 import "@/components/vow/vow.css";
 import type { Metadata } from "next";
-import VowPage from "@/components/vow/VowPage";
+import { VowPage } from "@/components/vow/VowPage";
 
 export const metadata: Metadata = {
   title: "VOW — Destination Weddings",
