@@ -1,6 +1,6 @@
 import "@/components/orbit/orbit.css";
 import type { Metadata } from "next";
-import OrbitPage from "@/components/orbit/OrbitPage";
+import { OrbitPage } from "@/components/orbit/OrbitPage";
 
 export const metadata: Metadata = {
   title: "ORBIT — SaaS / AI",
