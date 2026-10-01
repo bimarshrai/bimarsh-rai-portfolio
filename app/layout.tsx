@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Bimarsh Rai — Web Designer & Developer",
     description:
       "Modern, high-performance websites designed for growing businesses.",
