@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowUpRight, X } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import Container from "@/components/ui/Container";
 
 const items = [
