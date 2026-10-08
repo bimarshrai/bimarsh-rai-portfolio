@@ -22,12 +22,8 @@ export default function Home() {
           <Journal />
           <Explorations />
           <CosmicStats />
-          <section id="about" className="cosmic-section-divider py-20 sm:py-28">
-            <div className="mx-auto grid max-w-[1200px] gap-14 px-6 md:grid-cols-[.72fr_1.28fr] md:px-10 lg:px-16">
-              <div><About /></div>
-              <div id="services"><Services /></div>
-            </div>
-          </section>
+          <About />
+          <Services />
           <Contact />
         </main>
         <Footer />
