@@ -11,6 +11,7 @@ import { siteConfig } from "@/lib/constants";
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [emailDraft, setEmailDraft] = useState("");
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -20,6 +21,17 @@ export default function Contact() {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
+    const emailBody = [
+      `Name: ${String(payload.name ?? "")}`,
+      `Email: ${String(payload.email ?? "")}`,
+      `Company: ${String(payload.company ?? "") || "Not provided"}`,
+      `Need: ${String(payload.need ?? "")}`,
+      `Budget: ${String(payload.budget ?? "")}`,
+      "",
+      "Message:",
+      String(payload.message ?? ""),
+    ].join("\\n");
+    const draft = `mailto:${siteConfig.email}?subject=${encodeURIComponent(`Portfolio enquiry — ${String(payload.name ?? "")}`)}&body=${encodeURIComponent(emailBody)}`;
 
     try {
       const response = await fetch("/api/contact", {

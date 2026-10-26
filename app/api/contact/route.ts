@@ -182,7 +182,7 @@ export async function POST(request: Request) {
       );
     }
 
-    await sendEmail({ name, email, company, need, budget, message });
+    if (!getEnv("RESEND_API_KEY")) {\n      return NextResponse.json(\n        { error: "Email delivery is not configured on the website yet. You can still send your enquiry using the pre-filled email option below." },\n        { status: 503 },\n      );\n    }\n\n    await sendEmail({ name, email, company, need, budget, message });
 
     let whatsappSent = false;
     try {
